@@ -30,7 +30,7 @@ public class Main {
         System.out.println("Total Price : " + oder_SRP.totalPrice());
         PaymentProcessor paymentProcessor =  new PaymentProcessor();
         paymentProcessor.isPaid(oder_SRP);
-        paymentProcessor.payDebit(oder_SRP,"123456");
+        paymentProcessor.payCredit(oder_SRP,"123456");
         paymentProcessor.isPaid(oder_SRP);
 
 
