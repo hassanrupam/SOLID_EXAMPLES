@@ -15,9 +15,4 @@ public class OnlinePaymentProcessor implements IPaymentProcessor {
             System.out.println("Payment is Pending");
         }
     }
-
-    @Override
-    public void sendReceiptOnEmail(String _email) {
-        System.out.println("Receipt sent to  : " + _email);
-    }
 }

@@ -31,29 +31,27 @@ public class Main {
 
         OnlinePaymentProcessor onlinePaymentProcessor =  new OnlinePaymentProcessor();
         onlinePaymentProcessor.isPaid(oder);
-        onlinePaymentProcessor.processPayment(oder,"123456");
+        onlinePaymentProcessor.processPayment(oder,"Test@LSP.com");
         onlinePaymentProcessor.isPaid(oder);
-        onlinePaymentProcessor.sendReceiptOnEmail("Test@LSP.com");
 
         System.out.println("\n");
         //after Open Close
 
 
-        CreditPaymentProcessor_LSP creditPaymentProcessor_lsp =  new CreditPaymentProcessor_LSP();
+        CreditPaymentProcessor_LSP creditPaymentProcessor_lsp =  new CreditPaymentProcessor_LSP("123456");
         creditPaymentProcessor_lsp.isPaid(oder);
-        creditPaymentProcessor_lsp.processPayment(oder,"123456");
+        creditPaymentProcessor_lsp.processPayment(oder);
         creditPaymentProcessor_lsp.isPaid(oder);
 
-        DebitPaymentProcessor_LSP debitPaymentProcessor_lsp =  new DebitPaymentProcessor_LSP();
+        DebitPaymentProcessor_LSP debitPaymentProcessor_lsp =  new DebitPaymentProcessor_LSP("123456");
         debitPaymentProcessor_lsp.isPaid(oder);
-        debitPaymentProcessor_lsp.processPayment(oder,"123456");
+        debitPaymentProcessor_lsp.processPayment(oder);
         debitPaymentProcessor_lsp.isPaid(oder);
 
-        OnlinePaymentProcessor_LSP onlinePaymentProcessor_lsp =  new OnlinePaymentProcessor_LSP();
+        OnlinePaymentProcessor_LSP onlinePaymentProcessor_lsp =  new OnlinePaymentProcessor_LSP("Test@LSP.com");
         onlinePaymentProcessor_lsp.isPaid(oder);
-        onlinePaymentProcessor_lsp.processPayment(oder,"123456");
+        onlinePaymentProcessor_lsp.processPayment(oder);
         onlinePaymentProcessor_lsp.isPaid(oder);
-        onlinePaymentProcessor_lsp.sendReceiptOnEmail("Test@LSP.com");
 
        
 
