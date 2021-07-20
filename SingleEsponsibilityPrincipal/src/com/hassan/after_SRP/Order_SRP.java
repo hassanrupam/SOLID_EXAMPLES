@@ -6,6 +6,15 @@ import java.util.List;
 public class Order_SRP {
     List<Item> itemList = new ArrayList<>();
     private String orderNumber;
+    private Boolean isPaid = false;
+
+    public Boolean getPaid() {
+        return isPaid;
+    }
+
+    public void setPaid(Boolean _isPaid) {
+        this.isPaid = _isPaid;
+    }
 
     public Order_SRP(String orderNumber) {
         this.orderNumber = orderNumber;

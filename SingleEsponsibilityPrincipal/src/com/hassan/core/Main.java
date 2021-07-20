@@ -20,17 +20,18 @@ public class Main {
         order.isPaid();
 
         System.out.println("\n\n");
+        // After Single Responsibility
         Order_SRP oder_SRP = new Order_SRP("ORD-002");
 
         oder_SRP.add_Item("Keayboard",5.0,300.0);
         oder_SRP.add_Item("Mouse",2.0,250.0);
         oder_SRP.add_Item("Webcam",1.0,2000.0);
 
-        System.out.println("Total Price : " + order.totalPrice());
+        System.out.println("Total Price : " + oder_SRP.totalPrice());
         PaymentProcessor paymentProcessor =  new PaymentProcessor();
-        paymentProcessor.isPaid();
+        paymentProcessor.isPaid(oder_SRP);
         paymentProcessor.payDebit(oder_SRP,"123456");
-        paymentProcessor.isPaid();
+        paymentProcessor.isPaid(oder_SRP);
 
 
 
